@@ -249,7 +249,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: -1
   m_TargetDisplay: 0
@@ -395,7 +394,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ac25c67b6aef0cb499ec33ff9de8abc0, type: 3}
@@ -463,14 +461,12 @@ PrefabInstance:
       value: mesh_lowpoly (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ac25c67b6aef0cb499ec33ff9de8abc0, type: 3}
 --- !u!1001 &528428877
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 25bd1c158f200af499d3c1fc94e18f78, type: 3}
@@ -538,7 +534,6 @@ PrefabInstance:
       value: mesh_lowpoly (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 25bd1c158f200af499d3c1fc94e18f78, type: 3}
 --- !u!1 &705507993
 GameObject:
@@ -660,7 +655,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c74899e1a02587a4680278b1ee88f4c8, type: 3}
@@ -728,7 +722,6 @@ PrefabInstance:
       value: mesh_lowpoly
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c74899e1a02587a4680278b1ee88f4c8, type: 3}
 --- !u!1 &868372441
 GameObject:
@@ -1062,7 +1055,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ccbbfc5b7c0f8364b81836a61d708d80, type: 3}
@@ -1130,7 +1122,6 @@ PrefabInstance:
       value: mesh_lowpoly (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ccbbfc5b7c0f8364b81836a61d708d80, type: 3}
 --- !u!1 &1113118771
 GameObject:
@@ -1209,7 +1200,6 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -1271,7 +1261,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 529.9199, y: 2.7745}
+  m_AnchoredPosition: {x: -22, y: -389}
   m_SizeDelta: {x: 342.2498, y: 65.2789}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1272023965
@@ -1417,7 +1407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_AnchoredPosition: {x: -536, y: 253}
   m_SizeDelta: {x: 1920.0001, y: 0}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1334404492
@@ -1567,7 +1557,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 0}
+  m_AnchoredPosition: {x: 528, y: -361}
   m_SizeDelta: {x: 1920.0001, y: 1080}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1402471774
@@ -1834,7 +1824,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0565d9a8a478d704787092d51c2d36ea, type: 3}
@@ -1902,14 +1891,12 @@ PrefabInstance:
       value: mesh_lowpoly (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 0565d9a8a478d704787092d51c2d36ea, type: 3}
 --- !u!1001 &1850764138
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: cd38aef52853b76458913462fa700b8f, type: 3}
@@ -1977,7 +1964,6 @@ PrefabInstance:
       value: model
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: cd38aef52853b76458913462fa700b8f, type: 3}
 --- !u!1 &2052287475
 GameObject:
@@ -2007,7 +1993,7 @@ RectTransform:
   m_GameObject: {fileID: 2052287475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.1094127, y: 1.7336, z: 1.7336}
+  m_LocalScale: {x: 2.5990074, y: 1.7336, z: 1.7336}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1113118775}
@@ -2015,7 +2001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -556.7193, y: 2.4811}
+  m_AnchoredPosition: {x: -17, y: 269}
   m_SizeDelta: {x: 278.7295, y: 51.1279}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2052287477
@@ -2129,7 +2115,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4416980326199509239, guid: 8157fe74a627c9f4b8acdfc9dd3c3886, type: 3}
@@ -2181,7 +2166,6 @@ PrefabInstance:
       value: Scene Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 8157fe74a627c9f4b8acdfc9dd3c3886, type: 3}
 --- !u!114 &2059260467 stripped
 MonoBehaviour:
@@ -2224,6 +2208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
