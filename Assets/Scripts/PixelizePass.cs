@@ -11,7 +11,7 @@ public class PixelizePass : ScriptableRenderPass
     private int pixelBufferID = Shader.PropertyToID("_PixelBuffer");
 
     private Material material;
-    private int pixelScreenHeight, pixelScreenWidth;
+    private int pixelresolution, pixelScreenWidth;
 
     public PixelizePass(PixelizeFeature.CustomPassSettings settings)
     {
@@ -28,14 +28,14 @@ public class PixelizePass : ScriptableRenderPass
         colorBuffer = renderingData.cameraData.renderer.cameraColorTarget;
         RenderTextureDescriptor descriptor = renderingData.cameraData.cameraTargetDescriptor;
 
-        pixelScreenHeight = settings.screenHeight;
-        pixelScreenWidth = (int)(pixelScreenHeight * renderingData.cameraData.camera.aspect + 0.5f);
+        pixelresolution = settings.resolution;
+        pixelScreenWidth = (int)(pixelresolution * renderingData.cameraData.camera.aspect + 0.5f);
 
-        material.SetVector("_BlockCount", new Vector2(pixelScreenWidth, pixelScreenHeight));
-        material.SetVector("_BlockSize", new Vector2(1.0f / pixelScreenWidth, 1.0f / pixelScreenHeight));
-        material.SetVector("_HalfBlockSize", new Vector2(0.5f / pixelScreenWidth, 0.5f / pixelScreenHeight));
+        material.SetVector("_BlockCount", new Vector2(pixelScreenWidth, pixelresolution));
+        material.SetVector("_BlockSize", new Vector2(1.0f / pixelScreenWidth, 1.0f / pixelresolution));
+        material.SetVector("_HalfBlockSize", new Vector2(0.5f / pixelScreenWidth, 0.5f / pixelresolution));
 
-        descriptor.height = pixelScreenHeight;
+        descriptor.height = pixelresolution;
         descriptor.width = pixelScreenWidth;
 
         cmd.GetTemporaryRT(pixelBufferID, descriptor, FilterMode.Point);

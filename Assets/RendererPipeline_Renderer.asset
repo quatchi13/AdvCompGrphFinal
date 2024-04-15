@@ -70,4 +70,4 @@ MonoBehaviour:
   lerpSpeed: 2
   settings:
     renderPassEvent: 550
-    screenHeight: 110
+    resolution: 600

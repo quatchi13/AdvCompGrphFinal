@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 public class SceneControl : MonoBehaviour
 {
-    public SceneControl instance;
+    public static SceneControl instance;
 
     public GameObject fade;
     public int numMoves = 0;
@@ -39,15 +39,16 @@ public class SceneControl : MonoBehaviour
         else
         {
             while (randomScene == SceneManager.GetActiveScene().buildIndex)
-        {
-            randomScene = Random.Range(2,6);
-        }
+            {
+                randomScene = Random.Range(2,6);
+            }
 
-        StartCoroutine(FadeToBlack.fadeInstance.Fade());
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(randomScene);
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(FadeToBlack.fadeInstance.Fade(false));
+            StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpOut());
+            //yield return new WaitForSeconds(5);
+            SceneManager.LoadScene(randomScene);
+            //yield return new WaitForSeconds(5);
+            StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpIn());
+
         }
 
         numMoves++;
@@ -57,21 +58,23 @@ public class SceneControl : MonoBehaviour
 
     public IEnumerator PlayGame()
     {
-        FadeToBlack.fadeInstance.Fade(true, 1);
-        yield return new WaitForSeconds(1);
+        StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpOut());
+
+        yield return new WaitForSeconds(5);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +2);
-        yield return new WaitForSeconds(0.5f);
-        FadeToBlack.fadeInstance.Fade(false, 1);
+        yield return new WaitForSeconds(0);
+        StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpIn());
         yield return null;
     }
 
     public IEnumerator Banana() // Whichever scene the win banana is on
     {
-        FadeToBlack.fadeInstance.Fade(true, 1);
+        StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpOut());
+
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene(7);
         yield return new WaitForSeconds(0.5f);
-        FadeToBlack.fadeInstance.Fade(false, 1);
+        StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpIn());
         yield return null;
     }
 

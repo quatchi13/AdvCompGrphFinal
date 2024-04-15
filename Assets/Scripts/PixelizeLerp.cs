@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class PixelizeLerp : MonoBehaviour
 {
-    public void Test()
+    public static PixelizeLerp instance;
+
+    private void Awake()
     {
+        if (!instance)
+        {
+            instance = this;
+        }
+
+
         //StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpIn());
+    }
 
-        PixelizeFeature newEvent = new PixelizeFeature();
-        StartCoroutine(newEvent.LerpIn());
+    public void LerpIn()
+    {
+        StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpIn());
+    }
 
-        //newEvent.GoUp();
+    public void LerpOut()
+    {
+        StartCoroutine(PixelizeFeature.pixelizeFeatureInstance.LerpOut());
     }
 }
