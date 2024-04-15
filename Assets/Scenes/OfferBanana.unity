@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 294508805}
   - component: {fileID: 294508804}
   - component: {fileID: 294508807}
+  - component: {fileID: 294508808}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -241,6 +242,21 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &294508808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294508803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42cd8dcae69d178488f5efa28e7c7e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: 4800000, guid: 95703b29f49b899499233ea7308bb800, type: 3}
+  BlockCount: 128
+  lerpSpeed: 2
 --- !u!1 &395052372
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,6 +387,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ac25c67b6aef0cb499ec33ff9de8abc0, type: 3}
@@ -438,12 +455,14 @@ PrefabInstance:
       value: mesh_lowpoly (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ac25c67b6aef0cb499ec33ff9de8abc0, type: 3}
 --- !u!1001 &1113830233
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1485453606856287724, guid: 708440a2dff936041a06ad3b20bd4084, type: 3}
@@ -499,12 +518,14 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 708440a2dff936041a06ad3b20bd4084, type: 3}
 --- !u!1001 &1323792699
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ac25c67b6aef0cb499ec33ff9de8abc0, type: 3}
@@ -572,6 +593,7 @@ PrefabInstance:
       value: mesh_lowpoly (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: ac25c67b6aef0cb499ec33ff9de8abc0, type: 3}
 --- !u!1 &1335294250 stripped
 GameObject:

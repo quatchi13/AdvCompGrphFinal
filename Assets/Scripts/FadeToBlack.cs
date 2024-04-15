@@ -25,6 +25,8 @@ public class FadeToBlack : MonoBehaviour
                 objectColour = new Color(objectColour.r, objectColour.g, objectColour.b, fadeAmount);
                 blackSquare.GetComponent<Image>().color = objectColour;
 
+                //Pixelation.pixelationInstance.TransitionScene();
+
                 yield return null;
             }
         }
